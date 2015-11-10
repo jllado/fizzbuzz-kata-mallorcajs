@@ -1,0 +1,29 @@
+{
+  "name": "fizzbuzz",
+  "version": "0.0.1",
+  "description": "A Kata with JavaScript",
+  "author": "",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "karma start",
+    "test": "karma start --browsers Phamtom"
+  },
+  "keywords": [
+    "tdd",
+    "kata",
+    "javascript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-spec-reporter": "*"
+  },
+  "private": true
+}
