@@ -12,6 +12,9 @@ describe('FizzBuzz', function () {
       expect(1).toEqual(fizzbuzz(1));
       expect(2).toEqual(fizzbuzz(2));
     });
+    it('should return Fizz given number multiple of three', function () {
+      expect(fizzbuzz(3)).toEqual("Fizz");
+    });
 });
 function fizzbuzz(number) {
   return number;
