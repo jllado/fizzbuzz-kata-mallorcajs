@@ -19,6 +19,9 @@ describe('FizzBuzz', function () {
     it('should return Buzz given number multiple of five', function () {
       expect(fizzbuzz(5)).toEqual("Buzz");
     });
+    it('should return FizzBuzz given number multiple of three and five', function () {
+      expect(fizzbuzz(15)).toEqual("FizzBuzz");
+    });
 });
 
 function isMultipleOfThree(number) {
