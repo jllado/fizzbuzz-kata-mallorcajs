@@ -25,7 +25,12 @@ function isMultipleOfThree(number) {
   return number % 3 === 0;
 }
 
+function isMultipleOfFive(number) {
+  return number % 5 === 0;
+}
 function fizzbuzz(number) {
+  if (isMultipleOfFive(number))
+    return "Buzz";
   if (isMultipleOfThree(number))
     return "Fizz";
   return number;
