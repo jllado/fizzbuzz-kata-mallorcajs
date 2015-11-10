@@ -16,8 +16,13 @@ describe('FizzBuzz', function () {
       expect(fizzbuzz(3)).toEqual("Fizz");
     });
 });
+
+function isMultipleOfThree(number) {
+  return number % 3 === 0;
+}
+
 function fizzbuzz(number) {
-  if (number % 3 === 0)
+  if (isMultipleOfThree(number))
     return "Fizz";
   return number;
 }
