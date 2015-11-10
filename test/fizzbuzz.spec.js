@@ -8,9 +8,9 @@
 15 -> FizzBuzz
  */
 describe('FizzBuzz', function () {
-    it('should return number given number', function () {
-      expect(1).toEqual(fizzbuzz(1));
-      expect(2).toEqual(fizzbuzz(2));
+    it('should return number given number string', function () {
+      expect("1").toEqual(fizzbuzz(1));
+      expect("2").toEqual(fizzbuzz(2));
     });
     it('should return Fizz given number multiple of three', function () {
       expect(fizzbuzz(3)).toEqual("Fizz");
@@ -23,20 +23,3 @@ describe('FizzBuzz', function () {
       expect(fizzbuzz(15)).toEqual("FizzBuzz");
     });
 });
-
-function isMultipleOfThree(number) {
-  return number % 3 === 0;
-}
-
-function isMultipleOfFive(number) {
-  return number % 5 === 0;
-}
-function fizzbuzz(number) {
-  if (isMultipleOfThree(number) && isMultipleOfFive(number))
-    return "FizzBuzz";
-  if (isMultipleOfFive(number))
-    return "Buzz";
-  if (isMultipleOfThree(number))
-    return "Fizz";
-  return number;
-}
