@@ -13,5 +13,5 @@ describe('FizzBuzz', function () {
     });
 });
 function fizzbuzz(number) {
-  return 0;
+  return 1;
 }
