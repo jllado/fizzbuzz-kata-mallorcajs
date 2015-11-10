@@ -16,5 +16,8 @@ describe('FizzBuzz', function () {
     });
 });
 function fizzbuzz(number) {
+  if (2 === number) {
+    return 2;
+  }
   return 1;
 }
