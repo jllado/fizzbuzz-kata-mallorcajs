@@ -1,11 +1,14 @@
 'use strict';
 
+function isMultipleOf(number, divisor) {
+  return number % divisor === 0;
+}
 function isMultipleOfThree(number) {
-  return number % 3 === 0;
+  return isMultipleOf(number, 3);
 }
 
 function isMultipleOfFive(number) {
-  return number % 5 === 0;
+  return isMultipleOf(number, 5);
 }
 
 function fizzbuzz(number) {
