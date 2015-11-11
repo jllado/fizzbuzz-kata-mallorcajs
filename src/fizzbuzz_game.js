@@ -2,11 +2,9 @@
 
 function play(lenght) {
 
-  var result = "";
+  var result = new Array();
   for (var i = 1; i <= lenght; i++) {
-    if (i >= 2)
-      result += ", "
-    result += fizzbuzz(i);
+    result.push(fizzbuzz(i));
   }
-  return result;
+  return result.join(", ");
 }
